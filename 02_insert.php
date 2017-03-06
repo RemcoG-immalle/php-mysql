@@ -8,8 +8,8 @@ include 'db_credentials.php';
 // dit niet persé in php te doen.
 
 function voegBerichtToe($conn, $inhoud) {
-    $sql = "INSERT INTO ... 
-        VALUES('$inhoud', now())";
+    $sql = "INSERT INTO messages 
+        VALUES('1', '$inhoud', now())";
     $conn->exec($sql);
 }
 
